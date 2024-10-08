@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <nav>
+        <div class="logo">Starbucks</div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    </div>
+    <!-- Content -->
+    <div class="content">
+        <img src="https://images.unsplash.com/photo-1651569243630-9be1deb7c8a9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="" style="width: 100%; height: 300%;">
+    </div>
+    <br>
+    <br>
+    <!-- container -->
+    <h1 class="us">About Us</h1>
+    <div class="container">
+        <div class="card">
+            <h2>Our Story</h2>
+            <p>Founded in 1971, Starbucks is the world's leading coffee retailer.</p>
+        </div>
+        <div class="card">
+            <h2>Our Mission</h2>
+            <p>To inspire and nurture the human spirit – one person, one cup, and one neighborhood at a time.</p>
+        </div>
+        <div class="card">
+            <h2>Sustainability</h2>
+            <p>We strive to be a leader in sustainability in the coffee industry.</p>
+        </div>
+        <div class="card">
+            <h2>Community</h2>
+            <p>We are committed to making a positive impact in the communities we serve.</p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!-- services -->
+    <div class="services">
+        <h1>Our Services</h1>
+        <br>
+        <div class="service-card" onclick="toggleDetails('service1')">
+            <h2>Mobile Order & Pay</h2>
+            <p id="service1" class="details hidden">Order ahead and skip the line. Enjoy your favorite drinks at your
+                convenience!</p>
+        </div>
+        <div class="service-card" onclick="toggleDetails('service2')">
+            <h2>Starbucks Rewards</h2>
+            <p id="service2" class="details hidden">Earn stars with every purchase and redeem them for free drinks and
+                food!</p>
+        </div>
+        <div class="service-card" onclick="toggleDetails('service3')">
+            <h2>Delivery Services</h2>
+            <p id="service3" class="details hidden">Get your favorite beverages delivered right to your door through our
+                partners!</p>
+        </div>
+        <div class="service-card" onclick="toggleDetails('service4')">
+            <h2>Seasonal Menu</h2>
+            <p id="service4" class="details hidden">Explore our exciting seasonal drinks and snacks available throughout
+                the year!</p>
+        </div>
+        <br>
+        <br>
+        <!-- products -->
+        <div class="products">
+            <h1>Our Products</h1>
+            <div class="product-grid" id="productGrid">
+                <div class="product">
+                    <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-94515.jpg" alt="Coffee">
+                    <h2>Freshly Brewed</h2>
+                    <p>Enjoy our signature blend brewed fresh for you.</p>
+                    <span>$3.50</span>
+                    <button onclick="addToCart('Freshly Brewed Coffee')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-94696.jpg" alt="Latte">
+                    <h2>Classic Latte</h2>
+                    <p>Rich espresso blended with steamed milk.</p>
+                    <span>$4.00</span>
+                    <button onclick="addToCart('Classic Latte')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-94763.jpg"
+                        alt="Cappuccino">
+                    <h2>Cappuccino</h2>
+                    <p>A perfect blend of espresso, steamed milk, and froth.</p>
+                    <span>$4.50</span>
+                    <button onclick="addToCart('Cappuccino')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="product-grid" id="productGrid">
+            <div class="product">
+                <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-94515.jpg" alt="Coffee">
+                <h2>Freshly Brewed</h2>
+                <p>Enjoy our signature blend brewed fresh for you.</p>
+                <span>$3.50</span>
+                <button onclick="addToCart('Freshly Brewed Coffee')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-94696.jpg" alt="Latte">
+                <h2>Classic Latte</h2>
+                <p>Rich espresso blended with steamed milk.</p>
+                <span>$4.00</span>
+                <button onclick="addToCart('Classic Latte')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-94763.jpg" alt="Cappuccino">
+                <h2>Cappuccino</h2>
+                <p>A perfect blend of espresso, steamed milk, and froth.</p>
+                <span>$4.50</span>
+                <button onclick="addToCart('Cappuccino')">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!-- Contact -->
+     <h1 class="us">Contact us</h1>
+     <br>
+        <div class="form-container">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+    
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- footer -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-links">
+                    <h3>About Us</h3>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Social Impact</a></li>
+                        <li><a href="#">Newsroom</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Customer Care</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Feedback</a></li>
+                        <li><a href="#">Order Status</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Connect With Us</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p>Email: support@starbucks.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Starbucks Coffee Company. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <!-- link java script -->
+        <link rel="stylesheet" href="script.js">
+</body>
+</html>
