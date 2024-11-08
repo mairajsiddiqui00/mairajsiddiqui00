@@ -1,172 +1,224 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <title>Admin Dashboard Panel</title>
+	<title>Photoweb</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css"
+		href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+
 <body>
-    <nav>
-        <div class="logo-name">
-            <div class="logo-image">
-               <img src="images/logo.png" alt="">
-            </div>
+	<header>
+		<nav>
+			<div class="logo">
+				Photo<span>pi</span>
+			</div>
+			<div class="menu">
+				<a href="#">Home</a>
+				<a href="#">About</a>
+				<a href="#">Gallery</a>
+				<a href="#">Contact</a>
+			</div>
+			<div class="icon">
+				<i class="fa fa-search"></i>
+				<a href="#">Login</a>
 
-            <span class="logo_name">Admin</span>
-        </div>
+			</div>
+		</nav>
 
-        <div class="menu-items">
-            <ul class="nav-links">
-                <li><a href="#">
-                    <i class="uil uil-estate"></i>
-                    <span class="link-name">Dahsboard</span>
-                </a></li>
-                <li><a href="#">
-                    <i class="uil uil-files-landscapes"></i>
-                    <span class="link-name">Content</span>
-                </a></li>
-                <li><a href="#">
-                    <i class="uil uil-chart"></i>
-                    <span class="link-name">Analytics</span>
-                </a></li>
-                <li><a href="#">
-                    <i class="uil uil-thumbs-up"></i>
-                    <span class="link-name">Like</span>
-                </a></li>
-                <li><a href="#">
-                    <i class="uil uil-comments"></i>
-                    <span class="link-name">Comment</span>
-                </a></li>
-                <li><a href="#">
-                    <i class="uil uil-share"></i>
-                    <span class="link-name">Share</span>
-                </a></li>
-            </ul>
-            
-            <ul class="logout-mode">
-                <li><a href="#">
-                    <i class="uil uil-signout"></i>
-                    <span class="link-name">Logout</span>
-                </a></li>
 
-                <li class="mode">
-                    <a href="#">
-                        <i class="uil uil-moon"></i>
-                    <span class="link-name">Dark Mode</span>
-                </a>
+		<section class="h-text">
+			<i class="fa fa-camera" id="camera"></i>
+			<h1 data-aos="zoom-in-down" data-aos-delay="100">Capturing the moments that captivate your heart.</h1>
+			<input type="text" name="" placeholder="Search here...">
+			<button><i class="fa fa-search"></i></button>
 
-                <div class="mode-toggle">
-                  <span class="switch"></span>
-                </div>
-            </li>
-            </ul>
-        </div>
-    </nav>
 
-    <section class="dashboard">
-        <div class="top">
-            <i class="uil uil-bars sidebar-toggle"></i>
+		</section>
+	</header>
 
-            <div class="search-box">
-                <i class="uil uil-search"></i>
-                <input type="text" placeholder="Search here...">
-            </div>
-            
-            <img src="https://purwosari.magetan.go.id/image/admin.png" alt="">
-        </div>
+	<section class="filter-gallery">
+		<div class="portfolio-menu">
+			<ul>
+				<li class="active" data-filter="*"> All</li>
+				<li data-filter=".web"> Nature</li>
+				<li data-filter=".seo">Faishon</li>
+				<li data-filter=".graphics">Wedding</li>
+			</ul>
+		</div>
+		<div class="portfolio-item">
+			<div class="item web" data-aos="flip-left" data-aos-offset="100" data-aos-delay="100">
+				<img src="img/p1.jpg" width="100" height="100">
+			</div>
 
-        <div class="dash-content">
-            <div class="overview">
-                <div class="title">
-                    <i class="uil uil-tachometer-fast-alt"></i>
-                    <span class="text">Dashboard</span>
-                </div>
+			<div class="item seo" data-aos="flip-left" data-aos-offset="100" data-aos-delay="200">
+				<img src="img/p2.jpg" width="100" height="100">
+			</div>
+			<div class="item graphics" data-aos="flip-left" data-aos-offset="100" data-aos-delay="300">
+				<img src="img/p3.jpg" width="100" height="100">
+			</div>
+			<div class="item web" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="100">
+				<img src="img/p4.jpg" width="100" height="100">
+			</div>
 
-                <div class="boxes">
-                    <div class="box box1">
-                        <i class="uil uil-thumbs-up"></i>
-                        <span class="text">Total Likes</span>
-                        <span class="number">50,120</span>
-                    </div>
-                    <div class="box box2">
-                        <i class="uil uil-comments"></i>
-                        <span class="text">Comments</span>
-                        <span class="number">20,120</span>
-                    </div>
-                    <div class="box box3">
-                        <i class="uil uil-share"></i>
-                        <span class="text">Total Share</span>
-                        <span class="number">10,120</span>
-                    </div>
-                </div>
-            </div>
+			<div class="item seo" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="200">
+				<img src="img/p5.jpg" width="100" height="100">
+			</div>
+			<div class="item seo" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="300">
+				<img src="img/p6.jpg" width="100" height="100">
+			</div>
+			<div class="item graphics" data-aos="zoom-in-up" data-aos-offset="100" data-aos-delay="100">
+				<img src="img/p7.jpg" width="100" height="100">
+			</div>
+			<div class="item graphics" data-aos="zoom-in-up" data-aos-offset="100" data-aos-delay="200">
+				<img src="img/p8.jpg" width="100" height="100">
+			</div>
+			<div class="item graphics" data-aos="zoom-in-up" data-aos-offset="100" data-aos-delay="300">
+				<img src="img/p9.jpg" width="100" height="100">
+			</div>
+		</div>
 
-            <div class="activity">
-                <div class="title">
-                    <i class="uil uil-clock-three"></i>
-                    <span class="text">Recent Activity</span>
-                </div>
+	</section>
 
-                <div class="activity-data">
-                    <div class="data names">
-                        <span class="data-title">Name</span>
-                        <span class="data-list">Mujtaba</span>
-                        <span class="data-list">Sahil Khan</span>
-                        <span class="data-list">Mujab Ahmed</span>
-                        <span class="data-list">Adeel Ahmed</span>
-                        <span class="data-list">Muhammad Mairaj</span>
-                        <span class="data-list">Hansraj Wesnani</span>
-                        <span class="data-list">Muhammad Umer</span>
-                    </div>
-                    <div class="data email">
-                        <span class="data-title">Email</span>
-                        <span class="data-list">mujtaba@gmail.com</span>
-                        <span class="data-list">sahilkhan@gmail.com</span>
-                        <span class="data-list">mujabahmed@gmail.com</span>
-                        <span class="data-list">adeelahmed@gmail.com</span>
-                        <span class="data-list">siddiquimairaj70@gmail.com</span>
-                        <span class="data-list">hasnrajwesnani@gmail.com</span>
-                        <span class="data-list">umermohammad@gmail.com</span>
-                    </div>
-                    <div class="data joined">
-                        <span class="data-title">Joined</span>
-                        <span class="data-list">2024-02-1</span>
-                        <span class="data-list">2024-03-8</span>
-                        <span class="data-list">2024-05-7</span>
-                        <span class="data-list">2024-06-13</span>
-                        <span class="data-list">2024-07-14</span>
-                        <span class="data-list">2024-09-14</span>
-                        <span class="data-list">2024-10-4</span>
-                    </div>
-                    <div class="data type">
-                        <span class="data-title">Type</span>
-                        <span class="data-list">New</span>
-                        <span class="data-list">Member</span>
-                        <span class="data-list">Member</span>
-                        <span class="data-list">New</span>
-                        <span class="data-list">Member</span>
-                        <span class="data-list">New</span>
-                        <span class="data-list">Member</span>
-                    </div>
-                    <div class="data status">
-                        <span class="data-title">Status</span>
-                        <span class="data-list">Liked</span>
-                        <span class="data-list">Liked</span>
-                        <span class="data-list">Liked</span>
-                        <span class="data-list">Liked</span>
-                        <span class="data-list">Liked</span>
-                        <span class="data-list">Liked</span>
-                        <span class="data-list">Liked</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- link to java-script -->
-    <script src="script.js"></script>
+	<!--- filter gallery end---->
+
+	<!-- slider start--->
+
+	<section class="members">
+		<div class="member-info" data-aos="zoom-in-up" data-aos-offset="100" data-aos-delay="100">
+			<h1>Our <span>Informations</span></h1>
+			<p>What our member says</p>
+		</div>
+
+
+		<div class="member-card" data-aos="zoom-in-down" data-aos-offset="100" data-aos-delay="300">
+
+
+			<img src="img/member.png">
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam magnam illum mollitia aliquam
+				consectetur inventore tempora numquam, voluptatem iste molestiae?</p>
+			<h2>*anonymous</h2>
+
+			<img src="img/icon1.png" width="100">
+			<img src="img/icon2.png" width="100">
+			<img src="img/icon3.png" width="100">
+			<img src="img/icon4.png" width="100">
+		</div>
+		<div class="m-images" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="300">
+			<img src="img/s1.jpg">
+			<img src="img/s2.jpg">
+			<img src="img/s3.jpg">
+			<img src="img/s4.jpg">
+			<img src="img/s5.jpg">
+			<img src="img/s6.jpg">
+
+
+		</div>
+	</section>
+
+
+
+
+
+	<footer>
+		<div class="newsletter">
+			<div data-aos="fade-up" data-aos-offset="200">
+				<h2>Subscribe our newsletter</h2>
+				<p>We’re a team of non-cynics who truly care for our work.</p>
+			</div>
+			<div class="n-text" data-aos="fade-up-right" data-aos-offset="200">
+				<label>
+					<input type="text" name="" placeholder="Enter your email">
+					<button>Subscribe</button>
+
+				</label>
+			</div>
+		</div>
+
+
+		<div class="f-contact" data-aos="zoom-in-up" data-aos-offset="200">
+			<div>
+				<h1>Information</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur elit. Nihil sit dicta.</p>
+
+				<i class="fa fa-whatsapp"></i>
+				<i class="fa fa-instagram"></i>
+				<i class="fa fa-telegram"></i>
+				<i class="fa fa-twitter"></i>
+			</div>
+
+
+			<div>
+				<h1>Useful links</h1>
+				<p>About us</p>
+				<p>Gallery</p>
+				<p>Blog posts</p>
+				<p>Pricing plans</p>
+
+			</div>
+
+			<div>
+				<h1>Details</h1>
+				<p>Photographers</p>
+				<p>Gallery</p>
+				<p>About</p>
+				<p>Pricing plans</p>
+
+			</div>
+
+			<div>
+				<h1>Help & Support</h1>
+				<p>Privacy policy</p>
+				<p>Term & conditions</p>
+				<p>Technical support</p>
+				<p>Customer care</p>
+
+			</div>
+		</div>
+	</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+	<script>
+		$('.portfolio-item').isotope({
+			// options
+			itemSelector: '.item',
+			layoutMode: 'fitRows'
+		});
+		$('.portfolio-menu ul li').click(function () {
+			$('.portfolio-menu ul li').removeClass('active');
+			$(this).addClass('active');
+
+			var selector = $(this).attr('data-filter');
+			$('.portfolio-item').isotope({
+				filter: selector
+			});
+			return false;
+		});
+	</script>
+
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+
+	</script>
 </body>
+
 </html>
